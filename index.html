@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <title>Dev Burguer - A melhor hamburgueria dev!</title>
+  </head>
+  <body>
+    <!--Header-->
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-center bg-cover">
+      <div class="w-full h-full flex flex-col justify-center items-center">
+        <img
+          src="./assets/hamb-1.png"
+          alt="Logo dev burguer"
+          class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
+        />
+        <h1 class="text-4xl mt-4 mb-2 font-bold text-white">Dev Burguer</h1>
+        <p class="text-white font-medium">Rua Ninguém Sabe - 190, Xique-xique - BA</p>
+
+        <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+          <span class="text-white font-medium">Seg a Dom - 18:00 as 22:00</span>
+        </div>
+      </div>
+    </header>
+    <!--FIM Header-->
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+      Conheça nosso cardápio
+    </h2>
+
+    <!--Inicio Menu-->
+    <div id="menu">
+      <main
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16"
+      >
+        <!--Inicio Produto-->
+        <div class="flex gap-2">
+          <img
+            src="./assets/hamb-1.png"
+            alt="Hambuguer Smash"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2"
+          />
+          <div>
+            <p class="font-bold">Hambuguer Smash</p>
+            <p class="text-sm">
+              O hambúrguer smash é preparado ao pressionar a carne na chapa
+              quente, formando uma crosta crocante por fora e mantendo o
+              interior suculento. Com queijo derretido, picles e molhos
+              especiais, é um hambúrguer simples, saboroso e cheio de
+              autenticidade.
+            </p>
+
+            <div class="flex items-center gap-2 justify-between">
+              <p class="font-bold text-lg">R$ 18,90</p>
+
+              <button
+                class="bg-gray-900 px-5 rounded hover:shadow-gray-600 hover:shadow-lg add-to-cart-btn"
+                data-name="Hambuguer Smash"
+                data-price="19.90"
+              >
+                <i class="bi bi-cart3 text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Fim Produto-->
+
+        <!--Inicio Produto-->
+        <div class="flex gap-2">
+          <img
+            src="./assets/hamb-2.png"
+            alt="Hambuguer Smash"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2"
+          />
+          <div>
+            <p class="font-bold">Hambuguer Duplo</p>
+            <p class="text-sm">
+              O hambúrguer duplo é uma explosão de sabor, com duas suculentas
+              carnes grelhadas, queijo derretido e os ingredientes clássicos,
+              como picles e molhos especiais. Ideal para quem quer mais de tudo:
+              mais sabor, mais carne e mais satisfação!.
+            </p>
+
+            <div class="flex items-center gap-2 justify-between">
+              <p class="font-bold text-lg">R$ 31,90</p>
+
+              <button
+                class="bg-gray-900 px-5 rounded hover:shadow-gray-600 hover:shadow-lg add-to-cart-btn"
+                data-name="Hambuguer Duplo"
+                data-price="31.90"
+              >
+                <i class="bi bi-cart3 text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Fim Produto-->
+
+        <!--Inicio Produto-->
+        <div class="flex gap-2">
+          <img
+            src="./assets/hamb-3.png"
+            alt="Hambuguer Smash"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2"
+          />
+          <div>
+            <p class="font-bold">Hambuguer Salad</p>
+            <p class="text-sm">
+              O hambúrguer salad é a opção leve e saudável, perfeito para quem
+              busca sabor sem abrir mão de uma refeição balanceada. Feito com
+              carne suculenta, é acompanhado por uma mistura fresca de folhas,
+              legumes e molho leve, tudo envolvido em um pão integral. Uma
+              refeição deliciosa e nutritiva!
+            </p>
+
+            <div class="flex items-center gap-2 justify-between">
+              <p class="font-bold text-lg">R$ 15,90</p>
+
+              <button
+                class="bg-gray-900 px-5 rounded hover:shadow-gray-600 hover:shadow-lg add-to-cart-btn"
+                data-name="Hambuguer Salad"
+                data-price="15.90"
+              >
+                <i class="bi bi-cart3 text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Fim Produto-->
+
+        <!--Inicio Produto-->
+        <div class="flex gap-2">
+          <img
+            src="./assets/hamb-4.png"
+            alt="Hambuguer Smash"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2"
+          />
+          <div>
+            <p class="font-bold">Hambuguer da Casa</p>
+            <p class="text-sm">
+              O hambúrguer da casa é uma receita exclusiva, feita com carne
+              selecionada e temperos especiais, oferecendo um sabor único.
+              Servido com queijo, alface, tomate, cebola caramelizada e um molho
+              secreto, ele é a verdadeira definição de sabor e frescor em cada
+              mordida.
+            </p>
+
+            <div class="flex items-center gap-2 justify-between">
+              <p class="font-bold text-lg">R$ 25,90</p>
+
+              <button
+                class="bg-gray-900 px-5 rounded hover:shadow-gray-600 hover:shadow-lg add-to-cart-btn"
+                data-name="Hambuguer da Casa"
+                data-price="25.90"
+              >
+                <i class="bi bi-cart3 text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Fim Produto-->
+      </main>
+
+      <div class="mx-auto max-w-7xl px-2 my-2">
+        <h2 class="font-bold text-3xl">Bebidas</h2>
+      </div>
+
+      <!--Inicio Bebidas-->
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16"
+        id="menu"
+      >
+        <!--Inicio Produto-->
+        <div class="flex gap-2">
+          <img
+            src="./assets/refri-1.png"
+            alt="Coca Cola"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2"
+          />
+          <div>
+            <p class="font-bold">Coca-Cola</p>
+            <p class="text-sm">
+              A Coca-Cola é o refrigerante clássico que combina com qualquer
+              momento. Com seu sabor inconfundível e refrescante, é a escolha
+              perfeita para acompanhar suas refeições ou para matar a sede ao
+              longo do dia.
+            </p>
+
+            <div class="flex items-center gap-2 justify-between">
+              <p class="font-bold text-lg">R$ 6,90</p>
+
+              <button
+                class="bg-gray-900 px-5 rounded hover:shadow-gray-600 hover:shadow-lg add-to-cart-btn"
+                data-name="Coca-Cola"
+                data-price="6.90"
+              >
+                <i class="bi bi-cart3 text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Fim Produto-->
+
+        <!--Inicio Produto-->
+        <div class="flex gap-2">
+          <img
+            src="./assets/refri-2.png"
+            alt="Guaraná"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2"
+          />
+          <div>
+            <p class="font-bold">Guaraná</p>
+            <p class="text-sm">
+              O Guaraná é o refrigerante que traz o sabor tropical do Brasil.
+              Com sua refrescância única e leveza, é ideal para quem busca um
+              toque de energia natural em cada gole. Uma opção deliciosa para
+              quem adora sabores autênticos.
+            </p>
+
+            <div class="flex items-center gap-2 justify-between">
+              <p class="font-bold text-lg">R$ 7,50</p>
+
+              <button
+                class="bg-gray-900 px-5 rounded hover:shadow-gray-600 hover:shadow-lg add-to-cart-btn"
+                data-name="Guaraná"
+                data-price="7.50"
+              >
+                <i class="bi bi-cart3 text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Fim Produto-->
+      </div>
+      <!--Fim Bebidas-->
+    </div>
+    <!--Fim Menu-->
+    
+    <!--Inicios Modal-->
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal">
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+            <h2>Meu Carrinho</h2>
+
+            <div id="cart-items" class="flex justify-between mb-2 flex-col">
+
+            </div>
+            <p class="font-bold">Total <span id="cart-total">0,00</span></p>
+
+            <p class="font-bold mt-4">Endereço de entrega: </p>
+            <input type="text" name="" id="address" autocomplete="address-level1" placeholder="Digite seu endereço completo..." class="w-full border-2 p-1 rounded my-1">
+
+            <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo</p>
+
+            <div class="flex items-center justify-between mt-5 w-full">
+                <button id="close-modal-btn">Fechar</button>
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar Pedido</button>
+            </div>
+        </div>
+    </div>
+    <!--Inicios Modal-->
+
+    <!--Inicio Button Cart Footer-->
+    <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
+        <button class="flex items-center gap-2 font-bold text-white" id="cart-btn">
+            (<span id="cart-count">0</span>)
+            Veja meu carrinho
+            <i class="bi bi-cart text-lg"></i>
+        </button>
+    </footer>
+    <!--Fim Button Cart Footer-->
+  
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="script/script.js"></script>
+  </body>
+</html>
