@@ -170,7 +170,7 @@ Preço: R$ ${item.price}
         )
     }).join();
     const message = encodeURIComponent(cartItems)
-    const phone = "+558499477456"
+    const phone = "+5500123456789"
 
 window.open(`https://wa.me/${phone}?text=${message} Endereço: ${addressInput.value}`, "_blank");
     
