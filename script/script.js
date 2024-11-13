@@ -15,7 +15,7 @@ const addressWarn = document.getElementById("address-warn");
   }
 
   // Configura o alerta para desaparecer automaticamente após 3 segundos
-  setTimeout(closeAlert, 3000);
+  setTimeout(closeAlert, 5000);
 
 let cart =[];
 
