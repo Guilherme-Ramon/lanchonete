@@ -9,7 +9,7 @@ const cartCounter = document.getElementById("cart-count");
 const addressInput = document.getElementById("address");
 const addressWarn = document.getElementById("address-warn");
 
-window.alert("Imagens meramente ilustrativas!")
+window.alert("Imagens e descrições meramente ilustrativas!")
 
 let cart =[];
 
