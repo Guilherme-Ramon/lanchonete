@@ -9,6 +9,8 @@ const cartCounter = document.getElementById("cart-count");
 const addressInput = document.getElementById("address");
 const addressWarn = document.getElementById("address-warn");
 
+window.alert("Imagens meramente ilustrativas!")
+
 let cart =[];
 
 // abrir o carrinho
