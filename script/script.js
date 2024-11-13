@@ -9,14 +9,6 @@ const cartCounter = document.getElementById("cart-count");
 const addressInput = document.getElementById("address");
 const addressWarn = document.getElementById("address-warn");
 
-// Função para fechar o alerta manualmente
-  function closeAlert() {
-    document.getElementById('alert').style.display = 'none';
-  }
-
-  // Configura o alerta para desaparecer automaticamente após 3 segundos
-  setTimeout(closeAlert, 5000);
-
 let cart =[];
 
 // abrir o carrinho
